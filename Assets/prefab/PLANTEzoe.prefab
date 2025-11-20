@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 66544611798714599}
   - component: {fileID: 637204384500153286}
   - component: {fileID: 1780029033221845176}
+  - component: {fileID: 2395380373051189805}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -92,7 +93,7 @@ Transform:
   m_GameObject: {fileID: 7465858926039059518}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.945}
+  m_LocalPosition: {x: 0, y: 0, z: 6.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -126,6 +127,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -147,6 +150,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -172,3 +176,18 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2395380373051189805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7465858926039059518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9e4b603f9cfe6045aa7196c535b97e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Orbits
+  pivot: {fileID: 0}
+  angularSpeed: 20
+  selfRotationSpeed: 30
